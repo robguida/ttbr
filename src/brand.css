@@ -1,0 +1,14 @@
+/* Display the two approved lockups from the original artwork without redrawing
+   the lettering. Each frame shows only its corresponding part of the image. */
+header{gap:20px}
+header .brand{flex-shrink:0}
+.header-logo{display:block;position:relative;overflow:hidden;width:240px;aspect-ratio:740/240;background:white}
+header .header-logo img{position:absolute;max-width:none;width:207.567568%;height:auto;left:-55.405405%;top:-306.25%;object-fit:initial}
+nav{gap:20px}
+nav a{font-size:11px}
+.footer-logo{position:relative;overflow:hidden;width:230px;aspect-ratio:850/630;background:white}
+.foot-top .footer-logo img{position:absolute;max-width:none;width:180.705882%;height:auto;left:-40%;top:-6.349206%;border-radius:0;padding:0;background:none}
+@media(max-width:1100px){nav{gap:12px}.header-logo{width:210px}header{gap:12px}}
+@media(max-width:950px){header{height:95px;position:relative}.mobile{display:block}nav{display:none;position:absolute;top:95px;left:0;right:0;background:white;z-index:4;padding:20px 6%;box-shadow:0 10px 20px #0002}nav.open{display:flex;flex-direction:column;align-items:start;gap:6px}nav a{font-size:14px;width:100%;padding:8px}}
+@media(max-width:760px){header{height:88px}nav{top:88px}.header-logo{width:205px}.footer-logo{width:210px}}
+@media(max-width:360px){.header-logo{width:175px}header{gap:6px}}
