@@ -1,5 +1,5 @@
 const longwoodPhoto = (file, alt, caption, style = '', eager = false) => {
-  const dimensions = {'01-main-conservatory.jpg':[768,1020], '05-corpse-flower.png':[1079,1091], '07-west-conservatory-christmas.jpg':[2048,1542], '10-green-wall.jpg':[1536,1483]}[file] || [1542,2048];
+  const dimensions = {'01-main-conservatory.jpg':[768,1020], '05-corpse-flower.png':[1079,1091], '07-west-conservatory-christmas.jpg':[2048,1542], '10-green-wall.jpg':[1536,1483], '14-main-fountain-garden.jpg':[2048,1152]}[file] || [1542,2048];
   return `<figure class="longwood-photo ${style}"><img ${eager ? 'fetchpriority="high"' : 'loading="lazy"'} src="assets/longwood/${file}" alt="${alt}" width="${dimensions[0]}" height="${dimensions[1]}" decoding="async"><figcaption>${caption}</figcaption></figure>`;
 };
 const longwoodArticle = `<div class="wrap"><article class="prose longwood-story">
@@ -22,6 +22,7 @@ ${longwoodPhoto('03-woodland-walk.jpg', 'A quiet gravel path winding between tal
 <p>There is a wonderful story behind all this beauty. In 1906, Pierre S. du Pont purchased the property to protect a historic collection of trees from being cut for lumber. Those trees were part of the Peirce family’s earlier arboretum. Over the following decades, du Pont developed the gardens, conservatories, fountains, and spaces for music and entertaining that helped shape Longwood. What began as an effort to save trees grew into something extraordinary. <a href="https://longwoodgardens.org/history" target="_blank" rel="noopener">Read Longwood’s history</a>.</p>
 <p>After visiting Versailles in France and the gardens of the Borromean Islands on Italy’s Lake Maggiore, I found myself looking at Longwood with a new appreciation. The formal layouts, the water, the sense of theater—it all felt connected.</p>
 <p>Longwood’s own history documents du Pont’s admiration for Versailles and the Villa Gamberaia near Florence. The latter directly influenced his Italian Water Garden. Our travels helped me understand the appeal of those European gardens, and they made me appreciate what he created in Pennsylvania even more. <a href="https://longwoodgardens.org/gardens/lakes-district/italian-water-garden" target="_blank" rel="noopener">The story behind the Italian Water Garden</a>.</p>
+${longwoodPhoto('14-main-fountain-garden.jpg', 'A wide daytime view of Longwood’s Main Fountain Garden, with fountains, formal lawns, clipped hedges, and stone arcades', 'A little European grandeur, right here in Pennsylvania.')}
 <h2>Schoolwork with a very good view</h2>
 <p>Of course, our relationship with Longwood involved more than admiring the scenery.</p>
 <p>When we were homeschooling our son, we sometimes took his schoolwork there. We had comfortable places to sit, access to free Wi-Fi, and one of the loveliest classroom backdrops imaginable.</p>
