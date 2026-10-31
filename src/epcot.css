@@ -1,0 +1,21 @@
+.epcot-story{font-size:17px;line-height:1.85}
+.epcot-story>.meta{font-size:11px;margin-bottom:25px}
+.epcot-photo{margin:42px auto;text-align:center}
+.epcot-photo img{display:block;width:100%;height:auto;margin:auto}
+.epcot-photo figcaption{font-size:12px;line-height:1.65;color:var(--muted);margin-top:13px}
+.epcot-photo-hero{margin-top:0;margin-bottom:40px}
+.epcot-photo-portrait{max-width:480px}
+.epcot-photo-square{max-width:560px}
+.epcot-photo-food{max-width:580px}
+.epcot-story h2{font-family:Georgia,serif;font-size:29px;line-height:1.3;color:var(--ink);margin:48px 0 22px}
+.epcot-dish-photos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin:34px 0 40px;align-items:start}
+.epcot-dish-photos .epcot-photo{margin:0;min-width:0}
+.epcot-dish-photos img{aspect-ratio:4/3;object-fit:cover}
+.epcot-photo-credit{display:block;margin-top:5px;font-size:11px}
+.epcot-story-links{display:flex;justify-content:space-between;gap:22px;flex-wrap:wrap;border-top:1px solid #dfe5e6;margin-top:48px;padding-top:25px;font-size:13px}
+.epcot-card{margin:0 0 35px}
+.epcot-card>img{height:100%;min-height:350px;object-position:center}
+.epcot-card .feature-copy{align-self:center}
+.destination-epcot{margin-top:35px}
+@media(max-width:760px){.epcot-story{font-size:16px;line-height:1.8}.epcot-photo{margin:32px auto}.epcot-card>img{height:auto;min-height:0}.epcot-story-links{display:grid;gap:14px}}
+@media(max-width:540px){.epcot-dish-photos{grid-template-columns:1fr;gap:28px}.epcot-story h2{font-size:25px}}

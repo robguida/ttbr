@@ -1,0 +1,28 @@
+{
+  "status": "Article approved for GitHub commit and push; website deployment not performed",
+  "personalPhotosDisplayed": ["spaceship-earth-at-night.png", "mexico-pavilion.png", "china-pavilion-food.png", "epcot-garden.jpg"],
+  "removedFromPageAndCards": ["epcot-sunset.jpg", "epcot-character-visit.jpg"],
+  "referencePhotos": [
+    {
+      "file": "src/assets/epcot/san-angel-inn-osso-buco.webp",
+      "subject": "Osso Buco con Mole Negro at EPCOT San Angel Inn Restaurante",
+      "credit": "Andrew Long / Wandering In Disney",
+      "source": "https://wanderingindisney.com/2025/09/15/san-angel-inn-restaurante-review/",
+      "image": "https://i0.wp.com/live.staticflickr.com/65535/54779728512_f0a2e0b643_b.jpg?resize=1024%2C683&ssl=1",
+      "usageNote": "Source footer allows reuse with citation provided photography is not used for profit. Credited beneath the photograph. Check intended production usage against these terms before website deployment."
+    },
+    {
+      "file": "src/assets/epcot/la-hacienda-carne-asada.jpg",
+      "subject": "La Hacienda de San Angel carne asada, ancho-agave New York strip with asparagus and poblano gratin potatoes",
+      "credit": "Enchanted Foodie Guides",
+      "source": "https://enchantedfoodieguides.com/dining/epcot/world-showcase-mexico/la-hacienda-de-san-angel/",
+      "image": "https://res.cloudinary.com/dy4ufwpye/image/upload/t_detail/food/s7hetfuwimgxrdgv1pob",
+      "usageNote": "Credited reference photograph. No reuse license established; resolve production image rights before website deployment.",
+      "accuracyNote": "Caption explicitly identifies a different preparation from the owner's chimichurri memory; do not relabel as chimichurri."
+    }
+  ],
+  "menuSources": [
+    "https://disneyworld.disney.go.com/es-cl/dining/epcot/san-angel-inn-restaurante/menus/dinner/",
+    "https://disneyworld.disney.go.com/es-us/dining/epcot/hacienda-de-san-angel/menus/"
+  ]
+}
