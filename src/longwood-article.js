@@ -6,10 +6,10 @@ const longwoodArticle = `<div class="wrap"><article class="prose longwood-story"
 <p class="meta">By Brenda · Kennett Square, Pennsylvania</p>
 <div class="longwood-opening"><div><p class="longwood-lead">Longwood Gardens is my happy place.</p>
 <p>I mean that sincerely. If I had a bad day, felt overwhelmed, or simply needed to recharge, Longwood was where I wanted to go. A walk through those gardens could change the entire feel of my afternoon.</p>
-<p>We first started visiting in 2008 and quickly became members. That membership stayed part of our lives until it expired in 2026.</p>
+<p>We first started visiting in 2016 and quickly became members. That membership stayed part of our lives until it expired in 2026.</p>
 <p>And yes, there were a few tears.</p></div>
 ${longwoodPhoto('01-main-conservatory.jpg', 'Hanging flower baskets, ivy-covered columns, and a green lawn beneath the historic conservatory’s glass roof', 'My happy place, under glass.', '', true)}</div>
-<p>Nearly two decades of visits will do that to a person. Longwood had become part of our family’s routine, our memories, and my personal strategy for improving a less-than-wonderful day.</p>
+<p>Ten years of visits will do that to a person. Longwood had become part of our family’s routine, our memories, and my personal strategy for improving a less-than-wonderful day.</p>
 <p>Trying to describe its beauty is surprisingly difficult. “Beautiful” feels inadequate. “Spectacular” gets closer. Mostly, I want to take you by the hand and say, “Come on. You need to see this.”</p>
 ${longwoodPhoto('02-brenda-and-rob.jpg', 'Rob and Brenda beneath a red umbrella beside a flowering tree at Longwood Gardens', 'A little rain never spoiled a day at our happy place.', 'longwood-portrait')}
 <h2>A garden for whatever kind of day you’re having</h2>
@@ -97,7 +97,7 @@ ${longwoodPhoto('13-lunch-at-1906.jpg', 'A lunch plate at 1906 with sliced steak
 <p>If you live within a few hours’ drive, you are blessed to have it close enough to become a familiar place. And if you are traveling through southeastern Pennsylvania, give it a generous space in your itinerary.</p>
 <p>Check <a href="https://longwoodgardens.org/visit" target="_blank" rel="noopener">Longwood’s official visitor information</a> for tickets, hours, what is in bloom, and performance schedules. Reserve ahead for busy seasons, especially Christmas, and remember that the outdoor fountains and some dining options operate seasonally.</p>
 <p>Then go with enough time to enjoy being there.</p>
-<p>Our membership may have expired, but nearly two decades of memories have not.</p>
+<p>Our membership may have expired, but a decade of memories has not.</p>
 <p>I still have the music. I still get the goosebumps.</p>
 <p class="longwood-closing">And Longwood Gardens is still my happy place.</p>
 <div class="longwood-story-links"><a href="#/blog">← Back to the travel journal</a><a href="#/destinations">Explore destinations →</a></div>
