@@ -12,3 +12,4 @@ Use this GitHub repository as the source of truth for Travel the Back Roads.
 - Check JavaScript syntax and verify changed interactions when browser preview is available.
 - Commit and push completed changes to GitHub when requested. Never force-push or overwrite unrelated work.
 - Follow the Sites skill for deployment. GitHub push alone is not a deployment. Preserve the project identity in `.openai/hosting.json` and existing audience.
+- Always size photos to suit their page and content role. Keep display dimensions responsive, preserve the aspect ratio, and check desktop and mobile layouts. Supporting portraits should be modest in size and must not dominate the page.
