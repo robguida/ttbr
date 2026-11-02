@@ -55,8 +55,8 @@ const titles = {
 
 function render() {
     let route = location.hash.slice(1) || '/';
-    main.innerHTML = pages[route] ? pages[route]() : intro('A SMALL DETOUR', 'This road doesn’t lead anywhere yet.') + '<div class="wrap section"><a class="button" href="#/">BACK HOME →</a></div>';
-    document.title = (titles[route] || 'Page not found') + ' | Travel the Back Roads';
+    main.innerHTML = Object.prototype.hasOwnProperty.call(pages, route) ? pages[route]() : intro('A SMALL DETOUR', 'This road doesn’t lead anywhere yet.') + '<div class="wrap section"><a class="button" href="#/">BACK HOME →</a></div>';
+    document.title = (Object.prototype.hasOwnProperty.call(titles, route) ? titles[route] : 'Page not found') + ' | Travel the Back Roads';
     document.querySelectorAll('nav a').forEach(a => {
         let r = a.hash.slice(1);
         const active = r === route || (r === '/blog' && ['/ten-suitcases', '/epcot', '/longwood-gardens', '/tsa-precheck'].includes(route)) || (r === '/destinations' && ['/albania', '/norway'].includes(route));
@@ -73,7 +73,15 @@ function render() {
         document.getElementById('lightbox-caption').textContent = photo.caption + ' · Sarandë, Albania · Photo by Brenda Guida.';
         box.showModal()
     }));
-    window.scrollTo(0, 0)
+    window.scrollTo(0, 0);
+    countVisit(route)
+}
+
+// Visit counter: one same-origin 1x1 image per render. The slug comes only from a route that exists in pages
+// (never the raw hash or search text). No query string, cookie, storage, or ID.
+function countVisit(route) {
+    const slug = Object.prototype.hasOwnProperty.call(pages, route) ? (route.slice(1) || 'home') : 'not-found';
+    new Image().src = '/v/' + slug + '.gif'
 }
 
 window.addEventListener('hashchange', () => {

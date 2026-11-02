@@ -466,6 +466,14 @@ footer {
     font: 24px Georgia, serif
 }
 
+.foot-privacy {
+    max-width: 1150px;
+    margin: 0 auto 20px;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #bfd0d9
+}
+
 .foot-bottom {
     max-width: 1150px;
     margin: auto;

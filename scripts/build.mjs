@@ -21,5 +21,10 @@ checkTree(source);
 if (!existsSync(path.join(source, 'index.html'))) throw new Error('Missing src/index.html');
 if (existsSync(output)) rmSync(output, { recursive: true });
 mkdirSync(output);
-cpSync(source, output, { recursive: true });
+// src/ops holds private tooling (analytics scripts); it must never reach the public site.
+const privateOps = path.join(source, 'ops');
+// Windows may hand the filter a \\?\ prefixed path in a different case, so normalize before comparing.
+const norm = (p) => path.resolve(p.replace(/^\\\\\?\\/, '')).toLowerCase();
+const opsKey = norm(privateOps);
+cpSync(source, output, { recursive: true, filter: (from) => { const f = norm(from); return f !== opsKey && !f.startsWith(opsKey + path.sep); } });
 console.log('Built dist/ using only deployable files from src/.');
