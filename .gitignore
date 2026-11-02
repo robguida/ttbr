@@ -7,3 +7,4 @@ Thumbs.db
 *.tar.gz
 /dist/
 .openai/
+/.idea/
