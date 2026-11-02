@@ -1,0 +1,8 @@
+.purpose-photo { width: min(100%, 560px); margin: 30px auto; }
+.purpose-photo img { display: block; width: 100%; height: auto; }
+.purpose-photo figcaption { margin-top: 10px; text-align: center; font-size: 14px; color: var(--muted); }
+.purpose-quote { margin: 30px 0; padding: 16px 0 16px 24px; border-left: 3px solid var(--yellow, #d8bd36); }
+.purpose-quote p { margin: 0; }
+.purpose-scripture { margin: 30px 0; padding: 24px; background: var(--cream, #faf8f2); }
+.purpose-scripture p { margin: 0; }
+@media (max-width: 760px) { .purpose-photo { max-width: 360px; } }

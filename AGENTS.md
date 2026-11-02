@@ -13,3 +13,5 @@ Use this GitHub repository as the source of truth for Travel the Back Roads.
 - Commit and push completed changes to GitHub when requested. Never force-push or overwrite unrelated work.
 - Follow the Sites skill for deployment. GitHub push alone is not a deployment. Preserve the project identity in `.openai/hosting.json` and existing audience.
 - Always size photos to suit their page and content role. Keep display dimensions responsive, preserve the aspect ratio, and check desktop and mobile layouts. Supporting portraits should be modest in size and must not dominate the page.
+
+- Keep future articles consistent with “Ten suitcases and a new beginning”: use the shared `.prose` typography (Arial 16px, 1.75 line height, Georgia headings), including opening and closing paragraphs. Avoid oversized introductions or decorative closing fonts. Keep a similar article flow.
