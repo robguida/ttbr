@@ -1,4 +1,5 @@
 const main = document.getElementById('main');
+document.querySelector(".skip")?.addEventListener("click", e => { e.preventDefault(); main.focus(); });
 const fb = 'https://www.facebook.com/profile.php?id=100094159502968';
 const yt = 'https://www.youtube.com/@travelthebackroads';
 const intro = (label, title, description = '') => `<section class="page-top"><div class="wrap"><p class="eyebrow">${label}</p><h1>${title}</h1>${description ? `<p>${description}</p>` : ''}</div></section>`;

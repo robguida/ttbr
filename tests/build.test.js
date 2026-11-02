@@ -10,5 +10,7 @@ test('build leaves src/ops out of dist and still builds index.html', () => {
   execFileSync('node', [path.join(root, 'scripts', 'build.mjs')], { cwd: root });
   assert.ok(fs.existsSync(path.join(root, 'dist', 'index.html')));
   assert.ok(!fs.existsSync(path.join(root, 'dist', 'ops')));
+  assert.ok(fs.existsSync(path.join(root, 'dist', 'favicon.ico')));
+  assert.ok(fs.existsSync(path.join(root, 'dist', 'robots.txt')));
   assert.ok(fs.existsSync(path.join(root, 'src', 'ops', 'analytics', 'extract.js')));
 });
