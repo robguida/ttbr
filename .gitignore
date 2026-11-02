@@ -6,3 +6,4 @@ node_modules/
 Thumbs.db
 *.tar.gz
 /dist/
+.openai/
