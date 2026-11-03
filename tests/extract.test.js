@@ -24,5 +24,6 @@ test('extract keeps only exact /v/<slug>.gif hits and survives bad items', t => 
   assert.strictEqual(s.start, '20261025');
   assert.ok(s.failures.length >= 2);
   const all = fs.readdirSync(out).map(f => fs.readFileSync(path.join(out, f), 'utf8')).join('');
-  assert.ok(!/wp-login|\b\d{1,3}(\.\d{1,3}){3}\b|\.pem|<script/.test(all));
+  assert.ok(!/wp-login|\b\d{1,3}(\.\d{1,3}){3}\b|\.pem|<script|:\/\//.test(all));
+  for (const n of ['readers-by-day.json', 'sources.json', 'not-found.json']) assert.ok(fs.existsSync(path.join(out, n)), n);
 });
